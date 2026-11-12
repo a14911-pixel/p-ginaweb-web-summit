@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Summit 2026 - Afonso Ribeiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .bg-2 {
+            background-color: purple;
+            text-align: center;
+        }
+
+        .bg-1 {
+            text-align: left;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container bg-2">
+        <img src="https://websummit.com/wp-media/2025/11/Qcd8d32f-Web-Summit-Lisbon-9-12-2026-logo-coloured-300x54.png"
+            width="30%" alt="Logótipo Web Summit 2026" />
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="programa.html">Programa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="oradores.html">Oradores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Inscrição/Contacto</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container bg-1">
+        <header class="mb-4 text-center">
+            <h1>Formulário de Inscrição</h1>
+        </header>
+
+        
+        
+            
+            <div class="form-field mb-3">
+                <label for="nome" class="form-label mb-2">Nome *</label>
+                <input type="text" class="form-control" id="nome" name="nome" minlength="3" required>
+            </div>
+
+            <div class="form-field mb-3">
+                <label for="email" class="form-label mb-2">Email *</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="nome@exemplo.com" required>
+            </div>
+
+            <div class="form-field mb-3">
+                <label for="participante" class="form-label">Tipo de Participante *</label>
+                <select class="form-control" id="participante" name="participante" required>
+                    
+                    <option value="">Escolha um...</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="professor">Professor</option>
+                    <option value="visitante">Visitante</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-field mb-3">
+                <label for="mensagem" class="form-label mb-2">Mensagem *</label>
+                <textarea class="form-control" id="mensagem" name="mensagem" rows="4" minlength="10" required></textarea>
+            </div>
+
+            <div class="form-field mb-3">
+                <input type="checkbox" class="check" id="condicoes" name="aceita_condicoes" required>
+                <label for="condicoes">Li e aceito os termos de participação e a política de privacidade. *</label>
+            </div>
+
+            <div class="form-field mb-4">
+                <button type="submit" class="btn-solid btn-styled theme-accent">Submeter</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
